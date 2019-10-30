@@ -61,7 +61,8 @@ endif
 #
 # Compiler and common compiler flags
 
-CXX := g++ -static -static-libgcc -static-libstdc++
+CXX := g++
+#CXX := g++ -static -static-libgcc -static-libstdc++
 CXXFLAGS ?=
 
 #GDB = 1 #uncomment to compile for gdb debugger
@@ -114,8 +115,8 @@ endif
 #
 # Linker and common linker flags
 
-LD = g++ -static -static-libgcc -static-libstdc++
+#LD = g++ -static -static-libgcc -static-libstdc++
+LD = g++ 
 LDFLAGS += $(if $(DEBUG)||$(GDB),,-s)     # Strip executables
-LDFLAGS += -static -static-libgcc -static-libstdc++
-
+#LDFLAGS += -static -static-libgcc -static-libstdc++
 

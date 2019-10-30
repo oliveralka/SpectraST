@@ -50,7 +50,6 @@ LDFLAGS += -lpthread \
            -L$(DEP_ZLIB_BUILD)/lib -lz \
            -L$(DEP_GSL_BUILD)/lib  -lgsl -lgslcblas\
            -L$(DEP_EXPAT_BUILD)/lib -lexpat \
-	   -static -static-libgcc -static-libstdc++ \
 
 IFLAGS= -I$(DEP_EXPAT_BUILD)/include \
 	-I$(DEP_ZLIB_BUILD)/include \
